@@ -1,0 +1,123 @@
+@font-face {
+  font-family: GlassTTV;
+  src: url(./fonts/Glass_TTY_VT220.ttf);
+}
+
+.App {
+  text-align: center;
+}
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #000000;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#mHeader,h2{
+  font-variant: small-caps;
+  text-shadow: 3px 0px 0px rgba(128, 0, 0, 0.57),-3px 0px 0px rgba(3, 0, 128, 0.71),1px 1px 8px #ffffff;
+  font-family: GlassTTV;
+  font-weight:100;
+  background-color: #282c3400;
+  min-height: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+#wordSeq{
+   white-space: nowrap; 
+   overflow: visible; 
+  overflow-wrap: unset;
+  resize: none;
+  width: 50vw;
+  /* justify-content: center; */
+  margin: 0 auto;
+  /* text-align: left; */
+  font-family: GlassTTV;
+  color: hsl(0, 0%, 100%);
+  background: #000000;
+  text-shadow: 1px 1px 8px hsl(32, 100%, 50%)
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+  /* 3px 0px 0px rgba(128, 0, 0, 0.57),-3px 0px 0px rgba(3, 0, 128, 0.71); */
+}
+
+#timer {
+  font-family: GlassTTV;
+  font-weight: 100;
+  color: #00ea089e;
+  text-shadow: 3px 0px 0px rgba(128, 0, 0, 0.57),-3px 0px 0px rgba(3, 0, 128, 0.71),1px 1px 8px #00cc00;
+}
+
+:root {
+  --animation-time: 2s; 
+}
+
+
+
+.typed {
+  -webkit-animation: mymove 1s 1; /* Chrome, Safari, Opera */ 
+  animation: mymove var(--animation-time) 1 alternate  forwards;
+  /* alternate */
+  animation-direction: reverse;
+  position: relative; 
+  overflow-wrap: unset;
+  animation-fill-mode: forwards;
+   resize: none;
+  
+}
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes mymove {
+    0%   {margin-right: 0;}
+    100% {margin-right: 130px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    0%   {margin-right: 0;}
+    100% {margin-right: 2px;}
+}
+
+.typed, #wordSeq{
+  align-content: end;
+  text-align:right;
+  align-content: flex-end;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+  text-align-last: right ;
+}
